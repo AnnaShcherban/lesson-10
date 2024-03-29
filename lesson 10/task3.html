@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 10</title>
+  </head>
+  <body>
+    <h1>Задача3</h1>
+    <p>Сформувати список з тих цін, які більші за попереднє значення</p>
+    <script>
+      let priceForSomeTime = [
+        234, 1, 23, 56, 5689, 3456, 124, 789, 205, 567, 7890,
+      ]
+      let priceMorePrev = priceForSomeTime.filter(
+        (el, index, array) => index !== 0 && el > array[index - 1]
+      )
+      document.write(`${priceMorePrev}`)
+      //метод filter буде використовуватися,переглянути ще раз відео
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 10</title>
+  </head>
+  <body>
+    <h1>Задача 1</h1>
+    <p>
+      Дано історію цін на цінні папери за деякий період (згенерувати від 1 до
+      10000),Сформувати новий масив, у якому є тільки ті, що більші за 1000 грн.
+    </p>
+    <script>
+      let priceForSomeTime = [
+        234, 1, 23, 56, 5689, 3456, 124, 789, 205, 567, 7890,
+      ]
+      let elementmoreThan1000 = priceForSomeTime.filter((el) => el > 100)
+      document.write(elementmoreThan1000)
+    </script>
+  </body>
+</html>
